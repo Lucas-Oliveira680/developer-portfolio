@@ -1,0 +1,38 @@
+//reset
+.ol, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  outline: 1px solid blue;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar-list {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    color: var(--primary-color);
+
+    .navbar-item {
+      cursor: pointer;
+      &:hover {
+        a {
+        color: var(--accent-color-1);
+        }
+      }
+      a {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+}

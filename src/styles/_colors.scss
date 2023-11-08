@@ -1,0 +1,50 @@
+// Color Variables for Light Theme
+$light-primary-color: #6B65F2;
+$light-complementary-color: #A71DE0;
+$light-accent-color-1: #ea3259 ;
+$light-accent-color-2: #32ea94;
+$light-background-color: #F0F0F0;
+$light-text-color: #1E1E1E;
+
+// Color Variables for Dark Theme
+$dark-primary-color: #6B65F2;
+$dark-complementary-color: #A71DE0;
+$dark-accent-color-1: #ea3259;
+$dark-accent-color-2: #32ea94;
+$dark-background-color: #1E1E1E;
+$dark-text-color: #F0F0F0;
+
+@mixin theme($theme) {
+  @if $theme == "light" {
+    // Tranquil Harmony Light
+    --primary-color: #{$light-primary-color};
+    --complementary-color: #{$light-complementary-color};
+    --accent-color-1: #{$light-accent-color-1};
+    --accent-color-2: #{$light-accent-color-2};
+    --background-color: #{$light-background-color};
+    --text-color: #{$light-text-color};
+
+
+    --opposite-primary-color: #{$dark-primary-color};
+    --opposite-complementary-color: #{$dark-complementary-color};
+    --opposite-accent-color-1: #{$dark-accent-color-1};
+    --opposite-accent-color-2: #{$dark-accent-color-2};
+    --opposite-background-color: #{$dark-background-color};
+    --opposite-text-color: #{$dark-text-color};
+  } @else if $theme == "dark" {
+    // Tranquil Harmony Dark
+    --primary-color: #{$dark-primary-color};
+    --complementary-color: #{$dark-complementary-color};
+    --accent-color-1: #{$dark-accent-color-1};
+    --accent-color-2: #{$dark-accent-color-2};
+    --background-color: #{$dark-background-color};
+    --text-color: #{$dark-text-color};
+
+    --opposite-primary-color: #{$light-primary-color};
+    --opposite-complementary-color: #{$light-complementary-color};
+    --opposite-accent-color-1: #{$light-accent-color-1};
+    --opposite-accent-color-2: #{$light-accent-color-2};
+    --opposite-background-color: #{$light-background-color};
+    --opposite-text-color: #{$light-text-color};
+  }
+}
