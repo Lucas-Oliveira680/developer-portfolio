@@ -4,7 +4,7 @@ import {Injectable, signal} from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  currentTheme = signal('light');
+  currentTheme = signal('dark');
 
   toggleTheme() {
     this.currentTheme() === 'light' ? this.currentTheme.set('dark') : this.currentTheme.set('light');

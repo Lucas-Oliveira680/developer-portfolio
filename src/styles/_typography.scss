@@ -3,6 +3,11 @@
   font-weight: bold;
 }
 
+.huge-text {
+  font-size: 56px;
+  font-weight: bold;
+}
+
 .subtitle {
   font-size: 18px;
   font-weight: bold;
@@ -10,6 +15,22 @@
 .text {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .primary-color {

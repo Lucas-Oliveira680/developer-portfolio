@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._themeService.updateTheme('light');
+    this._themeService.updateTheme('dark');
   }
 
   title = 'portfolio';
