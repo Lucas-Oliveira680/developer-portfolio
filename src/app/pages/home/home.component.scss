@@ -1,16 +1,29 @@
 main {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "about earth earth"
+    "skills skills skills";
+
+  gap: 32px;
+
+  #earth {
+    grid-area: earth;
+  }
+  #about {
+    grid-area: about;
+  }
   #skills {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    overflow-x: hidden;
+    grid-area: skills;
 
     .logo-container {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      //animation: slide 100s linear infinite;
+      gap: 32px;
     }
 
     .logo {
@@ -28,11 +41,12 @@ main {
   }
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
-  100% {
-    transform: translateX(calc(-280px * 4));
-  }
+}
+
+.typewriter-caret {
+  color: red;
 }

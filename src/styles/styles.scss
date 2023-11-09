@@ -27,3 +27,15 @@ body {
   padding: 24px;
   border-radius: 12%;
 }
+
+.typewriter-caret {
+  font-weight: bold;
+  color: var(--accent-color-2);
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
