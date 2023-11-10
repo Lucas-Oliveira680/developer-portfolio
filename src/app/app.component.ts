@@ -20,5 +20,5 @@ export class AppComponent implements OnInit {
     this._themeService.updateTheme('dark');
   }
 
-  title = 'portfolio';
+  title = 'Lucas Codes';
 }
