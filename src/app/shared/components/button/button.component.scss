@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+.button {
+  display: flex;
+  border-radius: 4px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 200ms;
+  cursor: pointer;
+//size
+  padding: 8px 16px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  &.color-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+
+  &.color-accent-1 {
+    background-color: var(--accent-color-1);
+    color: var(--text-color);
+  }
+
+  &.color-accent-2 {
+    background-color: var(--accent-color-1);
+    color: var(--text-color);
+  }
+
+}
