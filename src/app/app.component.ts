@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ThemeService} from "src/app/shared/services/theme.service";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,11 @@ import {ThemeService} from "src/app/shared/services/theme.service";
 })
 export class AppComponent implements OnInit {
 
-  constructor(private _themeService: ThemeService) {
 
+  constructor(_translate: TranslateService, private _themeService: ThemeService) {
+    _translate.setDefaultLang('en');
+
+    _translate.use('en');
   }
 
   ngOnInit() {

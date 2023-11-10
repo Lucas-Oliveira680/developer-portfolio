@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'colors';
 @import 'typography';
+@import "reset";
 
 [data-theme="dark"] {
   @include theme('dark');

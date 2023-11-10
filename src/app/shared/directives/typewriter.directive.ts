@@ -1,10 +1,10 @@
-import { Directive, ElementRef, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 @Directive({
   selector: '[appTypewriter]',
   standalone: true
 })
-export class TypewriterDirective implements OnInit {
+export class TypewriterDirective implements OnInit, OnChanges {
   @Input() typingSpeed: number = 150;
   private content: string = '';
   private cursorPosition: number = 0;
@@ -13,9 +13,23 @@ export class TypewriterDirective implements OnInit {
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
-    this.content = this.el.nativeElement.innerHTML;
-    this.el.nativeElement.innerHTML = '';
-    this.typeContent();
+    this.initializeTyping();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['innerHTML']) {
+      this.initializeTyping();
+    }
+  }
+
+  private initializeTyping() {
+    // Delay to wait for Angular to render the innerHTML content
+    setTimeout(() => {
+      this.content = this.el.nativeElement.innerHTML;
+      this.el.nativeElement.innerHTML = '';
+      this.cursorPosition = 0;
+      this.typeContent();
+    });
   }
 
   private typeContent() {

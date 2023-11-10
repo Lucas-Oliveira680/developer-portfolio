@@ -14,6 +14,15 @@ main {
   }
   #about {
     grid-area: about;
+
+    h1 {
+      height: 230px;
+    }
+
+
+    .download-cv {
+      margin-top: 52px;
+    }
   }
   #skills {
     grid-area: skills;
@@ -39,14 +48,4 @@ main {
       }
     }
   }
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.typewriter-caret {
-  color: red;
 }

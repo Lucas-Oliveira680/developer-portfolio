@@ -1,0 +1,18 @@
+{
+  "PAGES": {
+    "ABOUT": {
+      "ABOUT_ME": "I am a front-end developer with almost <span class=\"accent-color-1\">4 years of experience</span>  transforming designs into amazing interfaces using technologies like <span class=\"accent-color-1\">Angular</span>, <span class=\"accent-color-1\">CSS3</span>, <span class=\"accent-color-1\">SASS</span>, <span class=\"accent-color-1\">Bootstrap</span>, <span class=\"accent-color-1\">Tailwind</span>, and the latest in web development. Passionate about creating beautiful <span class=\"accent-color-1\">UI’s</span> that make the user experience unique.",
+      "SKILLS": "Skills"
+    }
+  },
+  "COMPONENTS": {
+    "NAVBAR": {
+      "ABOUT": "About",
+      "PROJECTS": "Projects",
+      "CONTACT": "Contact"
+    }
+  },
+  "LABEL": {
+    "DOWNLOAD_RESUME": "Download Resume"
+  }
+}
