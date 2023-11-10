@@ -1,0 +1,51 @@
+main {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "about earth earth"
+    "skills skills skills";
+
+  gap: 32px;
+
+  #earth {
+    grid-area: earth;
+  }
+  #about {
+    grid-area: about;
+
+    h1 {
+      height: 230px;
+    }
+
+
+    .download-cv {
+      margin-top: 52px;
+    }
+  }
+  #skills {
+    grid-area: skills;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 32px;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      max-width: 280px;
+      padding: 12px;
+      border-radius: 10px;
+
+      img {
+        max-width: 256px;
+        max-height: 100px;
+        display: block;
+      }
+    }
+  }
+}

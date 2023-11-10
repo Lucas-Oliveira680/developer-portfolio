@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'colors';
+@import 'typography';
+@import "reset";
+
+[data-theme="dark"] {
+  @include theme('dark');
+}
+
+[data-theme="light"] {
+  @include theme('light');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto Light", sans-serif;
+
+  transition: background-color, color 0.3s ease;
+}
+
+.card {
+  background-color: $light-background-color;
+  color: $light-text-color;
+  padding: 24px;
+  border-radius: 12%;
+}
+
+.typewriter-caret {
+  font-weight: bold;
+  color: var(--accent-color-2);
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,85 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.huge-text {
+  font-size: 56px;
+  font-weight: bold;
+}
+.large-text {
+  font-size: 32px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.text-small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.regular-color {
+  color: var(--text-color)
+}
+
+.accent-color-1 {
+  color: var(--accent-color-1);
+}
+
+.accent-color-2 {
+  color: var(--accent-color-2);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.hover-underline-animation {
+  display: inline;
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

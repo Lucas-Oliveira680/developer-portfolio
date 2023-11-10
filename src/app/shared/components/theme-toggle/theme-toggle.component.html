@@ -1,0 +1,5 @@
+<div (click)="toggleState()" class="switch">
+  <i class="icon fa-solid fa-moon"></i>
+  <i class="icon fa-solid fa-sun"></i>
+  <div class="handle"  [ngClass]="{'on': currentTheme === 'dark'}"></div>
+</div>

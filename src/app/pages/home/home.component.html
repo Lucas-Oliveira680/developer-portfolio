@@ -1,0 +1,52 @@
+<main>
+  <section id="about">
+
+    <h1 class="title" [innerHTML]="'PAGES.ABOUT.ABOUT_ME' | translate" appTypewriter [typingSpeed]="40"></h1>
+
+
+    <div class="download-cv">
+      <app-button color="primary">
+        <i class="fa-solid fa-file"></i>
+        <small class="text text-bold">
+          {{'LABEL.DOWNLOAD_RESUME' | translate }}
+        </small>
+      </app-button>
+    </div>
+
+  </section>
+  <section id="earth">
+<!--    <app-earth></app-earth>-->
+  </section>
+
+  <section id="skills">
+  <p class="large-text text-center">{{'PAGES.ABOUT.SKILLS' | translate}}</p>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="./assets/angular_wordmark_gradient.png" alt="Angular logo">
+      </div>
+      <div class="logo">
+        <img src="./assets/ts-logo-128.png" alt="Typescript logo">
+      </div>
+      <div class="logo">
+        <img src="./assets/sass.png" alt="Sass logo">
+      </div>
+      <div class="logo">
+        <img src="./assets/node.png" alt="NodeJs logo">
+      </div>
+
+      <div class="logo">
+        <img src="./assets/bootstrap-logo.png" alt="Bootstrap logo">
+      </div>
+
+      <div class="logo">
+        <img src="./assets/tailwind-logo.png" alt="Tailwind Css logo">
+      </div>
+
+      <div class="logo">
+        <img src="./assets/git-logo.png" alt="Git logo">
+      </div>
+
+    </div>
+  </section>
+
+</main>
