@@ -348,3 +348,11 @@ template {
 [hidden] {
   display: none;
 }
+
+//reset lists and links
+.ol, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

@@ -2,7 +2,7 @@ main {
   margin-top: 64px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: max-content;
   grid-template-areas:
     "about earth earth"
     "skills skills skills";
@@ -16,7 +16,7 @@ main {
     grid-area: about;
 
     h1 {
-      height: 230px;
+      min-height: 230px;
     }
 
 

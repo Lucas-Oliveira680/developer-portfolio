@@ -1,12 +1,12 @@
 <header class="header">
-  <img src="./assets/lucas-dark-bg.svg" alt="Lucas logo">
+  <img class="logo" src="./assets/lucas-dark-bg.svg" alt="Lucas logo">
   <nav class="navbar">
-    <ul class="navbar-list">
-      <li class="navbar-item text hover-underline-animation"><a routerLink="home" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.ABOUT' | translate }}</a></li>
-      <li class="navbar-item text hover-underline-animation"><a routerLink="projects" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.PROJECTS' | translate }}</a></li>
-      <li class="navbar-item text hover-underline-animation"><a routerLink="contact" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.CONTACT' | translate }}</a></li>
-    </ul>
+  <small class="text hover-underline-animation" routerLink="home" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.ABOUT' | translate }}</small>
+   <small class="text hover-underline-animation" routerLink="projects" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.PROJECTS' | translate }}</small>
+   <small class="text hover-underline-animation" routerLink="contact" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.CONTACT' | translate }}</small>
   </nav>
-  <app-language-toggle class="language-toggle"></app-language-toggle>
-  <app-theme-toggle class="theme-toggle"></app-theme-toggle>
+  <div class="settings">
+  <app-language-toggle></app-language-toggle>
+  <app-theme-toggle></app-theme-toggle>
+  </div>
 </header>
