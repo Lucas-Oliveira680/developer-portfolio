@@ -1,10 +1,10 @@
-import { Directive, ElementRef, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import {Directive, ElementRef, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit} from '@angular/core';
 
 @Directive({
   selector: '[appTypewriter]',
   standalone: true
 })
-export class TypewriterDirective implements OnInit, OnChanges {
+export class TypewriterDirective implements AfterViewInit, OnChanges {
   @Input() typingSpeed: number = 150;
   private content: string = '';
   private cursorPosition: number = 0;
@@ -12,7 +12,7 @@ export class TypewriterDirective implements OnInit, OnChanges {
 
   constructor(private el: ElementRef) {}
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.initializeTyping();
   }
 
