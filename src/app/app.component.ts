@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ThemeService} from "src/app/shared/services/theme.service";
-import {TranslateService} from "@ngx-translate/core";
 import {LanguageService} from "src/app/shared/services/language.service";
+import {EBreakpoints} from "src/app/shared/types/breakpoints.enum";
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ import {LanguageService} from "src/app/shared/services/language.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  isMobile = window.innerWidth <= EBreakpoints.MD;
 
   constructor(private _languageService: LanguageService, private _themeService: ThemeService) {
   }
@@ -34,9 +35,11 @@ export class AppComponent implements OnInit {
         this._languageService.setLanguage('en');
       }
     }
+  }
 
-
-
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isMobile = window.innerWidth <= EBreakpoints.MD;
   }
 
 

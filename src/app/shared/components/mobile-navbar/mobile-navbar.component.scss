@@ -1,0 +1,77 @@
+.mobile-navbar {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  background-color: var(--opposite-background-color);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+
+
+  .navbar-item {
+    height: 60px;
+    padding: 12px;
+    cursor: pointer;
+    color: var(--opposite-text-color);
+
+
+    &.page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      &:hover {
+       i {
+         background-image: var(--gradient-1);
+       }
+      }
+
+      &.active {
+        i {
+          background-image: var(--gradient-1);
+        }
+      }
+
+      small {
+        color: var(--opposite-text-color);
+      }
+
+      i {
+        font-size: 25px;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, var(--opposite-text-color), var(--opposite-text-color));
+
+      }
+    }
+
+    &.theme-toggle{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 40px;
+
+      i {
+        color: var(--opposite-text-color);
+      }
+    }
+
+    &.lang-toggle {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+
+}

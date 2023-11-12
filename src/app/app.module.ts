@@ -13,6 +13,7 @@ import {EarthComponent} from "src/app/shared/components/earth/earth.component";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {MobileNavbarComponent} from "src/app/shared/components/mobile-navbar/mobile-navbar.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, 'assets/i18n/');
@@ -31,15 +32,16 @@ export function HttpLoaderFactory(http: HttpClient) {
     ThemeToggleComponent,
     TypewriterDirective,
     EarthComponent,
-      HttpClientModule,
-      TranslateModule.forRoot({
-          loader: {
-              provide: TranslateLoader,
-              useFactory: HttpLoaderFactory,
-              deps: [HttpClient],
-          },
-          // useDefaultLang: false,
-      }),
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      // useDefaultLang: false,
+    }),
+    MobileNavbarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

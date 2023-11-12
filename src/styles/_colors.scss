@@ -23,6 +23,8 @@ $dark-text-color: #F0F0F0;
     --accent-color-2: #{$light-accent-color-2};
     --background-color: #{$light-background-color};
     --text-color: #{$light-text-color};
+    --gradient-1: linear-gradient(to right, #{$light-accent-color-1} 0%, #{$light-primary-color} 100%);
+
 
 
     --opposite-primary-color: #{$dark-primary-color};
@@ -31,6 +33,7 @@ $dark-text-color: #F0F0F0;
     --opposite-accent-color-2: #{$dark-accent-color-2};
     --opposite-background-color: #{$dark-background-color};
     --opposite-text-color: #{$dark-text-color};
+
   } @else if $theme == "dark" {
     // Tranquil Harmony Dark
     --primary-color: #{$dark-primary-color};
@@ -39,6 +42,8 @@ $dark-text-color: #F0F0F0;
     --accent-color-2: #{$dark-accent-color-2};
     --background-color: #{$dark-background-color};
     --text-color: #{$dark-text-color};
+    --gradient-1: linear-gradient(to right, #{$dark-accent-color-1} 0%, #{$dark-primary-color} 100%);
+
 
     --opposite-primary-color: #{$light-primary-color};
     --opposite-complementary-color: #{$light-complementary-color};
@@ -46,5 +51,7 @@ $dark-text-color: #F0F0F0;
     --opposite-accent-color-2: #{$light-accent-color-2};
     --opposite-background-color: #{$light-background-color};
     --opposite-text-color: #{$light-text-color};
+
   }
+
 }

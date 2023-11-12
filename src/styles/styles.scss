@@ -2,6 +2,14 @@
 @import 'colors';
 @import 'typography';
 @import "reset";
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+//debug
+//  outline: 1px solid red;
+}
+
 
 [data-theme="dark"] {
   @include theme('dark');
@@ -10,10 +18,11 @@
 [data-theme="light"] {
   @include theme('light');
 }
-
-html,
-body {
-  height: 100%;
+body, app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -21,6 +30,34 @@ body {
 
   transition: background-color, color 0.3s ease;
 }
+
+app-root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "topbar" "content";
+
+  @include respond-to('md') {
+    grid-template-areas:
+      "content"
+      "tapbar";
+
+    .tapbar {
+      grid-area: tapbar;
+      place-self: flex-end;
+      width: 100%;
+    }
+  }
+  }
+
+  .topbar {
+    grid-area: topbar;
+  }
+
+  .content {
+    grid-area: content;
+    grid-row: span auto;
+  }
+
 
 .card {
   background-color: $light-background-color;
@@ -41,24 +78,10 @@ body {
   }
 }
 
-
-.body-glow-effect {
-  cursor: none; /* Optional: hides the default cursor */
-}
-
-.body-glow-effect::before {
-  content: '';
-  position: fixed;
-  pointer-events: none; /* Ensures the effect doesn't interfere with other elements */
-  border-radius: 50%;
-  width: 100px; /* Adjust the size of the glow effect */
-  height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent);
-  transform: translate(-50%, -50%); /* Centers the gradient on the cursor */
-  transition: opacity 0.3s, transform 0.2s; /* Smooth transition for moving and fading */
-  opacity: 0; /* Initially hidden */
-}
-
-.body-glow-effect:hover::before {
-  opacity: 1; /* Show the effect on hover */
-}
+//app-root {
+//  @include respond-to('md') {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-between;
+//  }
+//}
