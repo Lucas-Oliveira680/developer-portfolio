@@ -10,14 +10,13 @@ import {LanguageService} from "src/app/shared/services/language.service";
 })
 export class AppComponent implements OnInit {
 
-
-  browserLanguage: string | null = null;
-
   constructor(private _languageService: LanguageService, private _themeService: ThemeService) {
   }
 
   ngOnInit() {
     const themeInLocalStorage = this._themeService.getTheme();
+    const browserLanguage = navigator.language;
+    const languageInLocalStorage = this._languageService.getLanguage();
 
     if(themeInLocalStorage) {
       this._themeService.updateTheme(themeInLocalStorage);
@@ -25,18 +24,18 @@ export class AppComponent implements OnInit {
       this._themeService.updateTheme('dark');
     }
 
-    this.browserLanguage = navigator.language;
-    const languageInLocalStorage = this._languageService.getLanguage()
 
     if(languageInLocalStorage) {
       this._languageService.setLanguage(languageInLocalStorage);
+    } else {
+      if(browserLanguage === 'pt-BR') {
+        this._languageService.setLanguage('pt-br');
+      } else {
+        this._languageService.setLanguage('en');
+      }
     }
 
-    if(this.browserLanguage === 'pt-BR') {
-      this._languageService.setLanguage('pt-br');
-    } else {
-      this._languageService.setLanguage('en');
-    }
+
 
   }
 
