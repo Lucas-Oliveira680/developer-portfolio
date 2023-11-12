@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {ThemeService} from "src/app/shared/services/theme.service";
 import {TranslateService} from "@ngx-translate/core";
+import {LanguageService} from "src/app/shared/services/language.service";
 
 @Component({
   selector: 'app-root',
@@ -10,15 +11,35 @@ import {TranslateService} from "@ngx-translate/core";
 export class AppComponent implements OnInit {
 
 
-  constructor(_translate: TranslateService, private _themeService: ThemeService) {
-    _translate.setDefaultLang('en');
+  browserLanguage: string | null = null;
 
-    _translate.use('en');
+  constructor(private _languageService: LanguageService, private _themeService: ThemeService) {
   }
 
   ngOnInit() {
-    this._themeService.updateTheme('dark');
+    const themeInLocalStorage = this._themeService.getTheme();
+
+    if(themeInLocalStorage) {
+      this._themeService.updateTheme(themeInLocalStorage);
+    } else {
+      this._themeService.updateTheme('dark');
+    }
+
+    this.browserLanguage = navigator.language;
+    const languageInLocalStorage = this._languageService.getLanguage()
+
+    if(languageInLocalStorage) {
+      this._languageService.setLanguage(languageInLocalStorage);
+    }
+
+    if(this.browserLanguage === 'pt-BR') {
+      this._languageService.setLanguage('pt-br');
+    } else {
+      this._languageService.setLanguage('en');
+    }
+
   }
+
 
   title = 'Lucas Codes';
 }

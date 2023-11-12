@@ -1,5 +1,6 @@
 import {Injectable, signal} from '@angular/core';
 
+const THEME = 'theme';
 @Injectable({
   providedIn: 'root',
 })
@@ -13,5 +14,11 @@ export class ThemeService {
 
   updateTheme(theme: string) {
     document.documentElement.setAttribute('data-theme',theme);
+    window.localStorage.setItem(THEME, theme);
+    this.currentTheme.set(theme);
+  }
+
+  getTheme() {
+    return window.localStorage.getItem(THEME);
   }
 }

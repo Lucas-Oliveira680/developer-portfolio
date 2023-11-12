@@ -40,3 +40,25 @@ body {
     opacity: 0;
   }
 }
+
+
+.body-glow-effect {
+  cursor: none; /* Optional: hides the default cursor */
+}
+
+.body-glow-effect::before {
+  content: '';
+  position: fixed;
+  pointer-events: none; /* Ensures the effect doesn't interfere with other elements */
+  border-radius: 50%;
+  width: 100px; /* Adjust the size of the glow effect */
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent);
+  transform: translate(-50%, -50%); /* Centers the gradient on the cursor */
+  transition: opacity 0.3s, transform 0.2s; /* Smooth transition for moving and fading */
+  opacity: 0; /* Initially hidden */
+}
+
+.body-glow-effect:hover::before {
+  opacity: 1; /* Show the effect on hover */
+}

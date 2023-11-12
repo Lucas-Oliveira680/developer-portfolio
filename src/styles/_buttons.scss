@@ -1,0 +1,53 @@
+
+.gradient-button {
+  border: none;
+  display: inline-block;
+  border-radius: 99px;
+  color: var(--text-color);
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  padding: 17px 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.gradient-button:before,
+.gradient-button:after {
+  content: ' ';
+  position: absolute;
+  border-radius: 99px;
+}
+
+.gradient-button:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+  background: #ea3259;
+  background: -moz-linear-gradient(left, #ea3259 0%, #6B65F2 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6B65F2), color-stop(100%,#ea3259));
+  background: -webkit-linear-gradient(left, #ea3259 0%,#6B65F2 100%);
+  background: -o-linear-gradient(left, #ea3259 0%,#6B65F2 100%);
+  background: -ms-linear-gradient(left, #ea3259 0%,#6B65F2 100%);
+  background: linear-gradient(to right, #ea3259 0%,#6B65F2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea3259', endColorstr='#6B65F2',GradientType=1 );
+}
+
+.gradient-button:after {
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  background-color: var(--background-color);
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+
+.gradient-button:hover:after {
+  opacity: 0;
+}

@@ -15,10 +15,21 @@ export class LanguageToggleComponent {
   constructor(private _languageService: LanguageService) {
   }
 
-  language: 'EN' | 'PT-BR' = 'EN';
 
   toggleLanguage() {
-    this.language = this.language === 'EN' ? 'PT-BR' : 'EN';
-    this._languageService.setLanguage(this.language.toLowerCase())
+    if(!this.language) return;
+
+    const currentLang = this.language;
+
+    if(currentLang === 'en') {
+      this._languageService.setLanguage('pt-br');
+    }
+    if(currentLang === 'pt-br') {
+      this._languageService.setLanguage('en');
+    }
+  }
+
+  get language():string | null {
+    return this._languageService.getLanguage()
   }
 }
