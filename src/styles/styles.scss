@@ -29,6 +29,10 @@ body, app-root {
   font-family: "Roboto Light", sans-serif;
 
   transition: background-color, color 0.3s ease;
+
+  @include respond-to('md') {
+    min-height: 100dvh;
+  }
 }
 
 app-root {
