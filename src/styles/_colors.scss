@@ -24,6 +24,8 @@ $dark-text-color: #F0F0F0;
     --background-color: #{$light-background-color};
     --text-color: #{$light-text-color};
     --gradient-1: linear-gradient(to right, #{$light-accent-color-1} 0%, #{$light-primary-color} 100%);
+    --gradient-2: linear-gradient(to right, #{$light-primary-color} 0%, #{$light-accent-color-2} 100%);
+
 
 
 
@@ -43,6 +45,8 @@ $dark-text-color: #F0F0F0;
     --background-color: #{$dark-background-color};
     --text-color: #{$dark-text-color};
     --gradient-1: linear-gradient(to right, #{$dark-accent-color-1} 0%, #{$dark-primary-color} 100%);
+    --gradient-2: linear-gradient(to right, #{$dark-primary-color} 0%, #{$dark-accent-color-2} 100%);
+
 
 
     --opposite-primary-color: #{$light-primary-color};

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="c" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160.91 200">
+  <defs>
+    <style>
+      .j {
+        fill: url(#e);
+      }
+
+      .j, .k, .l, .m {
+        stroke-width: 0px;
+      }
+
+      .n {
+        clip-path: url(#g);
+      }
+
+      .o, .m {
+        fill: url(#f);
+      }
+
+      .p {
+        clip-path: url(#d);
+      }
+
+      .k {
+        fill: none;
+      }
+
+      .l {
+        fill: url(#h);
+      }
+    </style>
+    <clipPath id="d">
+      <path class="k" d="m48.63,54.04H8.21c-1.04,0-1.87.84-1.87,1.87v129.65c0,1.58,1.83,2.45,3.06,1.45,12.35-10.11,30.32-24.79,40.42-33.05.44-.36.69-.89.69-1.45V55.91c0-1.04-.84-1.87-1.87-1.87Zm99.74,106.04H59.56c-.43,0-.84.15-1.17.41l-41.02,32.95c-1.38,1.11-.6,3.34,1.17,3.34h110.88c1.91,0,3.71-.88,4.88-2.38l18.96-24.33c3.17-4.06.27-9.99-4.88-9.99Z"/>
+    </clipPath>
+    <linearGradient id="e" data-name="Gradiente sem nome 31" x1="-57.99" y1="119.78" x2="170.4" y2="119.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32ea94"/>
+      <stop offset="1" stop-color="#6b65f2"/>
+    </linearGradient>
+    <linearGradient id="f" data-name="Gradiente sem nome 32" x1="6.34" y1="74.59" x2="154.57" y2="74.59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ea3259"/>
+      <stop offset=".24" stop-color="#dc2d74"/>
+      <stop offset=".75" stop-color="#b922bb"/>
+      <stop offset="1" stop-color="#a71de0"/>
+    </linearGradient>
+    <clipPath id="g">
+      <path class="m" d="m112.28,145.96h40.42c1.04,0,1.87-.84,1.87-1.87V14.43c0-1.58-1.83-2.45-3.06-1.45-12.35,10.11-30.32,24.79-40.42,33.05-.44.36-.69.89-.69,1.45v96.61c0,1.04.84,1.87,1.87,1.87ZM12.54,39.92h88.81c.43,0,.84-.15,1.17-.41L143.55,6.56c1.38-1.11.6-3.34-1.17-3.34H31.49c-1.91,0-3.71.88-4.88,2.38L7.66,29.93c-3.17,4.06-.27,9.99,4.88,9.99Z"/>
+    </clipPath>
+    <linearGradient id="h" data-name="Gradiente sem nome 32" x1="-3085.26" y1="157.84" x2="-2856.87" y2="157.84" gradientTransform="translate(3075.77 -77.62)" xlink:href="#f"/>
+  </defs>
+  <g class="p">
+    <rect class="j" x="-57.99" y="5.59" width="228.39" height="228.39"/>
+  </g>
+  <g>
+    <path class="o" d="m112.28,145.96h40.42c1.04,0,1.87-.84,1.87-1.87V14.43c0-1.58-1.83-2.45-3.06-1.45-12.35,10.11-30.32,24.79-40.42,33.05-.44.36-.69.89-.69,1.45v96.61c0,1.04.84,1.87,1.87,1.87ZM12.54,39.92h88.81c.43,0,.84-.15,1.17-.41L143.55,6.56c1.38-1.11.6-3.34-1.17-3.34H31.49c-1.91,0-3.71.88-4.88,2.38L7.66,29.93c-3.17,4.06-.27,9.99,4.88,9.99Z"/>
+    <g class="n">
+      <rect class="l" x="-9.49" y="-33.98" width="228.39" height="228.39" transform="translate(209.42 160.44) rotate(180)"/>
+    </g>
+  </g>
+</svg>
