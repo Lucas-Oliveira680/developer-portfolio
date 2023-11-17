@@ -1,4 +1,52 @@
+@import "src/styles/mixins";
+
 .content {
   padding-left: 80px;
   padding-right: 80px;
+}
+
+@include respond-to('md') {
+  app-root {
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 66px;
+  }
+}
+
+.mobile-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  img {
+    width: 50px;
+    height: 100px;
+  }
+
+  .settings {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: 30px;
+
+  }
+}
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--swappable-accent);
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
 }

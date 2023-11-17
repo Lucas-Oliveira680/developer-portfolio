@@ -1,4 +1,4 @@
-<div class="mobile-navbar">
+<div class="mobile-navbar" id="mobileNavbar">
   <div class="navbar-item page" routerLink="home" routerLinkActive="text-bold active">
     <i class="fa-solid fa-book"></i>
     <small class="text-extra-small">{{'COMPONENTS.NAVBAR.ABOUT' | translate }}</small>
@@ -11,12 +11,5 @@
     <i class="fa-regular fa-address-card"></i>
     <small class="text-extra-small">{{'COMPONENTS.NAVBAR.CONTACT' | translate }}</small>
   </div>
-  <div class="navbar-item theme-toggle" (click)="toggleTheme()">
-    <i class="fa-solid" [ngClass]="{'fa-moon': currentTheme === 'light', 'fa-sun': currentTheme === 'dark'}"></i>
-  </div>
-  <div class="navbar-item lang-toggle">
-  <app-language-toggle></app-language-toggle>
-  </div>
-
 
 </div>

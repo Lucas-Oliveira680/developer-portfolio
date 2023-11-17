@@ -14,16 +14,13 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {MobileNavbarComponent} from "src/app/shared/components/mobile-navbar/mobile-navbar.component";
+import {LanguageToggleComponent} from "src/app/shared/components/language-toggle/language-toggle.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, 'assets/i18n/');
 }
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ProjectsComponent
-  ],
+  declarations: [AppComponent, HomeComponent, ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -42,8 +39,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       // useDefaultLang: false,
     }),
     MobileNavbarComponent,
+    LanguageToggleComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

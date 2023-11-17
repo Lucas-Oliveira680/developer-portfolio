@@ -1,6 +1,19 @@
+<div *ngIf="isMobile" class="mobile-header">
+  <img alt="Lucas logo" src="assets/logo/svg/exp-06.svg">
+  <div class="settings">
+    <i (click)="toggleTheme()" [ngClass]="{'fa-moon': currentTheme === 'dark', 'fa-sun': currentTheme === 'light'}"
+       class="fa-solid regular-color"></i>
+    <app-language-toggle></app-language-toggle>
+  </div>
+</div>
 <app-navbar *ngIf="!isMobile" class="topbar"></app-navbar>
 <div [class.content]="!isAtContactRoute">
   <router-outlet></router-outlet>
 </div>
-<app-mobile-navbar *ngIf="isMobile" class="tapbar"></app-mobile-navbar>
+<app-mobile-navbar *ngIf="isMobile && isAtTop" class="tapbar"></app-mobile-navbar>
 <ng-container #toastContainer></ng-container>
+
+
+<div (click)="scrollToTop()" *ngIf="isMobile && showScrollButton" class="scroll-to-top">
+  <i class="fa-solid fa-arrow-up regular-color"></i>
+</div>
