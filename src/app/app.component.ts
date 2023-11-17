@@ -1,47 +1,58 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import {ThemeService} from "src/app/shared/services/theme.service";
-import {LanguageService} from "src/app/shared/services/language.service";
-import {EBreakpoints} from "src/app/shared/types/breakpoints.enum";
+import { AfterViewInit, Component, HostListener, OnInit, ViewChild, ViewContainerRef } from '@angular/core'
+import { ThemeService } from 'src/app/shared/services/theme.service'
+import { LanguageService } from 'src/app/shared/services/language.service'
+import { EBreakpoints } from 'src/app/shared/types/breakpoints.enum'
+import { Router } from '@angular/router'
+import { ToastService } from 'src/app/shared/services/toast.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-  isMobile = window.innerWidth <= EBreakpoints.MD;
+export class AppComponent implements OnInit, AfterViewInit {
+  isMobile = window.innerWidth <= EBreakpoints.MD
+  @ViewChild('toastContainer', { read: ViewContainerRef }) toastContainer!: ViewContainerRef
 
-  constructor(private _languageService: LanguageService, private _themeService: ThemeService) {
+  constructor(
+    private _languageService: LanguageService,
+    private _router: Router,
+    private _themeService: ThemeService,
+    private _toastService: ToastService
+  ) {}
+
+  get isAtContactRoute(): boolean {
+    return this._router.url === '/contact'
   }
 
   ngOnInit() {
-    const themeInLocalStorage = this._themeService.getTheme();
-    const browserLanguage = navigator.language;
-    const languageInLocalStorage = this._languageService.getLanguage();
+    const themeInLocalStorage = this._themeService.getTheme()
+    const browserLanguage = navigator.language
+    const languageInLocalStorage = this._languageService.getLanguage()
 
-    if(themeInLocalStorage) {
-      this._themeService.updateTheme(themeInLocalStorage);
+    if (themeInLocalStorage) {
+      this._themeService.updateTheme(themeInLocalStorage)
     } else {
-      this._themeService.updateTheme('dark');
+      this._themeService.updateTheme('dark')
     }
 
-
-    if(languageInLocalStorage) {
-      this._languageService.setLanguage(languageInLocalStorage);
+    if (languageInLocalStorage) {
+      this._languageService.setLanguage(languageInLocalStorage)
     } else {
-      if(browserLanguage === 'pt-BR') {
-        this._languageService.setLanguage('pt-br');
+      if (browserLanguage === 'pt-BR') {
+        this._languageService.setLanguage('pt-br')
       } else {
-        this._languageService.setLanguage('en');
+        this._languageService.setLanguage('en')
       }
     }
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.isMobile = window.innerWidth <= EBreakpoints.MD;
+  ngAfterViewInit() {
+    this._toastService.setViewContainerRef(this.toastContainer)
   }
 
-
-  title = 'Lucas Codes';
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isMobile = window.innerWidth <= EBreakpoints.MD
+  }
 }

@@ -1,0 +1,40 @@
+@import "src/styles/mixins";
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-100%);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success {
+  background-color: var(--accent-color-2);
+}
+
+.error {
+  background-color: var(--accent-color-1);
+}
+
+.info {
+  background-color: var(--primary-color);
+
+}
+
+.warning {
+  background-color: var(--complementary-color);
+}

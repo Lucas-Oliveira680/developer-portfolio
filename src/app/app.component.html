@@ -1,5 +1,6 @@
-<app-navbar class="topbar" *ngIf="!isMobile"></app-navbar>
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
-  <app-mobile-navbar class="tapbar" *ngIf="isMobile"></app-mobile-navbar>
+<app-navbar *ngIf="!isMobile" class="topbar"></app-navbar>
+<div [class.content]="!isAtContactRoute">
+  <router-outlet></router-outlet>
+</div>
+<app-mobile-navbar *ngIf="isMobile" class="tapbar"></app-mobile-navbar>
+<ng-container #toastContainer></ng-container>
