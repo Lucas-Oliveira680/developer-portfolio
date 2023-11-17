@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "start-local": "ng serve --host 0.0.0.0 --disable-host-check",
-    "build": "ng build",
+    "start": "ng serve --configuration development",
+    "start-local": "ng serve --host 0.0.0.0 --disable-host-check --configuration=development",
+    "build": "npm run config && ng build",
+    "config": "ts-node src/environments/set-env.ts",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prettier": "prettier --write \"src/**/*.ts\" \"src/**/*.html\"",
+    "lint:scss": "stylelint \"src/**/*.scss\""
   },
   "private": true,
   "dependencies": {
@@ -19,8 +22,10 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@emailjs/browser": "^3.11.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "emailjs-com": "^3.2.0",
     "rxjs": "~7.8.0",
     "three": "^0.158.0",
     "tslib": "^2.3.0",
@@ -38,6 +43,11 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-scss": "^5.3.1",
     "typescript": "~5.1.3"
   }
 }

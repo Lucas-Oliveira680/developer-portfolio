@@ -3,6 +3,49 @@
     "ABOUT": {
       "ABOUT_ME": "Sou um desenvolvedor front-end com quase <span class=\"accent-color-1\">4 anos de experiência</span> transformando designs em interfaces incríveis usando tecnologias como <span class=\"accent-color-1\">Angular</span>, <span class=\"accent-color-1\">CSS3</span>, <span class=\"accent-color-1\">SASS</span>, <span class=\"accent-color-1\">Bootstrap</span>, <span class=\"accent-color-1\">Tailwind</span> e o que há de mais moderno em web development. Apaixonado por criar belas <span class=\"accent-color-1\">UI’s</span> que tornam a experiência do usuário única.",
       "SKILLS": "Habilidades"
+    },
+    "CONTACT": {
+      "CONTACT_ME": "Olá!<br/>Gostaria de falar comigo? <br/>Me mande uma mensagem!",
+      "TOGETHER": "Vamos trabalhar juntos! \uD83D\uDE80",
+      "FIND_ME": "Me encontre em:",
+      "FORM": {
+        "NAME": {
+          "FIELD": "Nome",
+          "PLACEHOLDER": "Seu nome",
+          "ERROR": "Nome é obrigatório",
+          "ERROR_MIN_LENGTH": "Nome deve ter ao menos {{min}} caracteres",
+          "ERROR_MAX_LENGTH": "Nome deve ter ao máximo {{max}} caracteres"
+        },
+        "EMAIL": {
+          "FIELD": "Email",
+          "PLACEHOLDER": "Seu Email",
+          "ERROR": "Email é obrigatório",
+          "ERROR_MIN_LENGTH": "Email deve ter ao menos {{min}} caracteres",
+          "ERROR_MAX_LENGTH": "Email deve ter ao máximo {{max}} caracteres",
+          "ERROR_VALID_EMAIL": "Email deve ser um email válido"
+        },
+        "SUBJECT": {
+          "FIELD": "Assunto",
+          "PLACEHOLDER": "Assunto",
+          "ERROR": "Assunto é obrigatório",
+          "ERROR_MIN_LENGTH": "Assunto deve ter ao menos {{min}} caracteres",
+          "ERROR_MAX_LENGTH": "Assunto deve ter ao máximo {{max}} caracteres"
+        },
+        "MESSAGE": {
+          "FIELD": "Mensagem",
+          "PLACEHOLDER": "Sua mensagem",
+          "ERROR": "Mensagem é obrigatória",
+          "ERROR_MIN_LENGTH": "Mensagem deve ter ao menos {{min}} caracteres"
+        },
+        "SUBMIT": {
+          "FIELD": "Enviar",
+          "PLACEHOLDER": "Enviar"
+        },
+        "NOTIFICATIONS": {
+          "SUCCESS": "Mensagem enviada com sucesso!",
+          "ERROR": "Erro ao enviar mensagem"
+        }
+      }
     }
   },
   "COMPONENTS": {

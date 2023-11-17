@@ -1,1 +1,114 @@
-<p>contact works!</p>
+<div class="contact-container">
+
+  <div class="left">
+
+    <h1 class="medium-text regular-text-color text-center text-bold"
+        innerHTML="{{'PAGES.CONTACT.CONTACT_ME' | translate}}">
+    </h1>
+
+    <form #contactFormElement (ngSubmit)="onSubmit()" [formGroup]="contactForm"
+          class="tranquil-harmony-form">
+      <div class="field-container">
+        <input [class.invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
+               [class.valid]="contactForm.get('name')?.valid && contactForm.get('name')?.touched"
+               formControlName="name"
+               name="name"
+               placeholder="{{'PAGES.CONTACT.FORM.NAME.PLACEHOLDER' | translate}} *"
+               type="text">
+        <div *ngIf="contactForm.get('name')?.errors?.['required'] && contactForm.get('name')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.NAME.ERROR' | translate }}
+        </div>
+        <div *ngIf="contactForm.get('name')?.errors?.['minlength'] && contactForm.get('name')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.NAME.ERROR_MIN_LENGTH' | translate:{min: 3} }}
+        </div>
+        <div *ngIf="contactForm.get('name')?.errors?.['maxlength'] && contactForm.get('name')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.NAME.ERROR_MAX_LENGTH' | translate:{max: 100} }}
+        </div>
+      </div>
+
+      <div class="field-container">
+        <input [class.invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
+               [class.valid]="contactForm.get('email')?.valid && contactForm.get('email')?.touched"
+               formControlName="email"
+               name="email"
+               placeholder="{{'PAGES.CONTACT.FORM.EMAIL.PLACEHOLDER' | translate}} *"
+               type="email">
+        <div *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.EMAIL.ERROR' | translate }}
+        </div>
+        <div *ngIf="contactForm.get('email')?.errors?.['email'] && contactForm.get('email')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.EMAIL.ERROR_VALID_EMAIL' | translate }}
+        </div>
+        <div
+          *ngIf="contactForm.get('email')?.errors?.['maxlength'] && !contactForm.get('email')?.errors?.['email'] && contactForm.get('email')?.touched"
+          class="error-message">{{ 'PAGES.CONTACT.FORM.EMAIL.ERROR_MAX_LENGTH' | translate:{max: 64} }}
+        </div>
+      </div>
+
+      <div class="field-container">
+        <input [class.invalid]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched"
+               [class.valid]="contactForm.get('subject')?.valid && contactForm.get('subject')?.touched"
+               formControlName="subject"
+               name="subject"
+               placeholder="{{'PAGES.CONTACT.FORM.SUBJECT.PLACEHOLDER' | translate}} *"
+               type="text">
+        <div *ngIf="contactForm.get('subject')?.errors?.['required'] && contactForm.get('subject')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.SUBJECT.ERROR' | translate }}
+        </div>
+        <div *ngIf="contactForm.get('subject')?.errors?.['minlength'] && contactForm.get('subject')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.SUBJECT.ERROR_MIN_LENGTH' | translate:{min: 3} }}
+        </div>
+        <div *ngIf="contactForm.get('subject')?.errors?.['maxlength'] && contactForm.get('subject')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.SUBJECT.ERROR_MAX_LENGTH' | translate:{max: 30} }}
+        </div>
+      </div>
+
+      <div class="field-container">
+    <textarea [class.invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
+              [class.valid]="contactForm.get('message')?.valid && contactForm.get('message')?.touched"
+              formControlName="message"
+              name="message"
+              placeholder="{{'PAGES.CONTACT.FORM.MESSAGE.PLACEHOLDER' | translate}} *"></textarea>
+        <div *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.MESSAGE.ERROR' | translate }}
+        </div>
+        <div *ngIf="contactForm.get('message')?.errors?.['minlength'] && contactForm.get('message')?.touched"
+             class="error-message">{{ 'PAGES.CONTACT.FORM.MESSAGE.ERROR_MIN_LENGTH' | translate:{min: 3} }}
+        </div>
+      </div>
+
+      <button [disabled]="!contactForm.valid || isEmailjsResponding"
+              type="submit">{{'PAGES.CONTACT.FORM.SUBMIT.FIELD' | translate}}</button>
+    </form>
+
+
+  </div>
+  <div [ngClass]="{ 'blob-1': currentTheme === 'light', 'blob-2': currentTheme === 'dark'}" class="right">
+
+    <h1 class="large-text opposite-text-color text-center text-bold">{{'PAGES.CONTACT.TOGETHER' | translate}}</h1>
+
+
+    <div class="social-media-container">
+
+      <h1 class="large-text regular-color text-center">{{'PAGES.CONTACT.FIND_ME' | translate}}</h1>
+      <hr>
+      <div class="social-media">
+        <a href="https://github.com/Lucas-Oliveira680" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/luccaseoliveira" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://wa.me/5511930630446" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="mailto:lucas@lucascodes.dev">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

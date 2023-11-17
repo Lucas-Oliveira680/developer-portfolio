@@ -1,7 +1,7 @@
 // Color Variables for Light Theme
 $light-primary-color: #6B65F2;
 $light-complementary-color: #A71DE0;
-$light-accent-color-1: #ea3259 ;
+$light-accent-color-1: #ea3259;
 $light-accent-color-2: #32ea94;
 $light-background-color: #F0F0F0;
 $light-text-color: #1E1E1E;
@@ -25,10 +25,7 @@ $dark-text-color: #F0F0F0;
     --text-color: #{$light-text-color};
     --gradient-1: linear-gradient(to right, #{$light-accent-color-1} 0%, #{$light-primary-color} 100%);
     --gradient-2: linear-gradient(to right, #{$light-primary-color} 0%, #{$light-accent-color-2} 100%);
-
-
-
-
+    --swappable-accent: #{$dark-accent-color-2};
     --opposite-primary-color: #{$dark-primary-color};
     --opposite-complementary-color: #{$dark-complementary-color};
     --opposite-accent-color-1: #{$dark-accent-color-1};
@@ -46,15 +43,14 @@ $dark-text-color: #F0F0F0;
     --text-color: #{$dark-text-color};
     --gradient-1: linear-gradient(to right, #{$dark-accent-color-1} 0%, #{$dark-primary-color} 100%);
     --gradient-2: linear-gradient(to right, #{$dark-primary-color} 0%, #{$dark-accent-color-2} 100%);
-
-
-
     --opposite-primary-color: #{$light-primary-color};
     --opposite-complementary-color: #{$light-complementary-color};
     --opposite-accent-color-1: #{$light-accent-color-1};
     --opposite-accent-color-2: #{$light-accent-color-2};
     --opposite-background-color: #{$light-background-color};
     --opposite-text-color: #{$light-text-color};
+    --swappable-accent: #{$light-accent-color-1};
+
 
   }
 
