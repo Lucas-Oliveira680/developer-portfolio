@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="c" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 417.68 500">
+  <defs>
+    <style>
+      .j {
+        fill: url(#e);
+      }
+
+      .j, .k, .l, .m {
+        stroke-width: 0px;
+      }
+
+      .n {
+        clip-path: url(#g);
+      }
+
+      .o, .m {
+        fill: url(#f);
+      }
+
+      .p {
+        clip-path: url(#d);
+      }
+
+      .k {
+        fill: none;
+      }
+
+      .l {
+        fill: url(#h);
+      }
+    </style>
+    <clipPath id="d">
+      <path class="k" d="m129.48,135.39H28.69c-2.58,0-4.67,2.09-4.67,4.67v323.3c0,3.94,4.58,6.11,7.63,3.62,30.8-25.21,75.6-61.81,100.79-82.4,1.09-.89,1.72-2.22,1.72-3.62v-240.9c0-2.58-2.09-4.67-4.67-4.67Zm248.73,264.43h-221.47c-1.06,0-2.1.36-2.93,1.03l-102.29,82.16c-3.44,2.76-1.49,8.32,2.93,8.32h276.49c4.76,0,9.24-2.19,12.16-5.94l47.27-60.67c7.9-10.12.68-24.9-12.16-24.9Z"/>
+    </clipPath>
+    <linearGradient id="e" data-name="Gradiente sem nome 31" x1="-136.39" y1="299.33" x2="433.12" y2="299.33" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32ea94"/>
+      <stop offset="1" stop-color="#6b65f2"/>
+    </linearGradient>
+    <linearGradient id="f" data-name="Gradiente sem nome 32" x1="24.02" y1="186.64" x2="393.66" y2="186.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ea3259"/>
+      <stop offset=".24" stop-color="#dc2d74"/>
+      <stop offset=".75" stop-color="#b922bb"/>
+      <stop offset="1" stop-color="#a71de0"/>
+    </linearGradient>
+    <clipPath id="g">
+      <path class="m" d="m288.2,364.61h100.79c2.58,0,4.67-2.09,4.67-4.67V36.63c0-3.94-4.58-6.11-7.63-3.62-30.8,25.21-75.6,61.81-100.79,82.4-1.09.89-1.72,2.22-1.72,3.62v240.9c0,2.58,2.09,4.67,4.67,4.67ZM39.47,100.18h221.47c1.06,0,2.1-.36,2.93-1.03l102.29-82.16c3.44-2.76,1.49-8.32-2.93-8.32H86.74c-4.76,0-9.24,2.19-12.16,5.94l-47.27,60.67c-7.9,10.12-.68,24.9,12.16,24.9Z"/>
+    </clipPath>
+    <linearGradient id="h" data-name="Gradiente sem nome 32" x1="-4214.21" y1="160.05" x2="-3644.7" y2="160.05" gradientTransform="translate(4198.77 40.62)" xlink:href="#f"/>
+  </defs>
+  <g class="p">
+    <rect class="j" x="-136.39" y="14.57" width="569.51" height="569.51"/>
+  </g>
+  <g>
+    <path class="o" d="m288.2,364.61h100.79c2.58,0,4.67-2.09,4.67-4.67V36.63c0-3.94-4.58-6.11-7.63-3.62-30.8,25.21-75.6,61.81-100.79,82.4-1.09.89-1.72,2.22-1.72,3.62v240.9c0,2.58,2.09,4.67,4.67,4.67ZM39.47,100.18h221.47c1.06,0,2.1-.36,2.93-1.03l102.29-82.16c3.44-2.76,1.49-8.32-2.93-8.32H86.74c-4.76,0-9.24,2.19-12.16,5.94l-47.27,60.67c-7.9,10.12-.68,24.9,12.16,24.9Z"/>
+    <g class="n">
+      <rect class="l" x="-15.44" y="-84.08" width="569.51" height="569.51" transform="translate(538.63 401.34) rotate(180)"/>
+    </g>
+  </g>
+</svg>

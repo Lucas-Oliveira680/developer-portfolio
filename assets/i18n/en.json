@@ -1,0 +1,61 @@
+{
+  "PAGES": {
+    "ABOUT": {
+      "ABOUT_ME": "I am a front-end developer with almost <span class=\"accent-color-1\">4 years of experience</span>  transforming designs into amazing interfaces using technologies like <span class=\"accent-color-1\">Angular</span>, <span class=\"accent-color-1\">CSS3</span>, <span class=\"accent-color-1\">SASS</span>, <span class=\"accent-color-1\">Bootstrap</span>, <span class=\"accent-color-1\">Tailwind</span>, and the latest in web development. Passionate about creating beautiful <span class=\"accent-color-1\">UI</span> that makes the user experience unique.",
+      "SKILLS": "Skills"
+    },
+    "CONTACT": {
+      "CONTACT_ME": "Hi there!<br/>Would you like to get in touch? <br/>Send me a message!",
+      "TOGETHER": "Let's work together! \uD83D\uDE80",
+      "FIND_ME": "Find me at:",
+      "FORM": {
+        "NAME": {
+          "FIELD": "Name",
+          "PLACEHOLDER": "Your name",
+          "ERROR": "Name is required",
+          "ERROR_MIN_LENGTH": "Name must be at least {{min}} characters long",
+          "ERROR_MAX_LENGTH": "Name must be at most {{max}} characters long"
+        },
+        "EMAIL": {
+          "FIELD": "Email",
+          "PLACEHOLDER": "Your email",
+          "ERROR": "Email is required",
+          "ERROR_MIN_LENGTH": "Email must be at least {{min}} characters long",
+          "ERROR_MAX_LENGTH": "Email must be at most {{max}} characters long",
+          "ERROR_VALID_EMAIL": "Email must be a valid email"
+        },
+        "SUBJECT": {
+          "FIELD": "Subject",
+          "PLACEHOLDER": "Subject",
+          "ERROR": "Subject is required",
+          "ERROR_MIN_LENGTH": "Subject must be at least {{min}} characters long",
+          "ERROR_MAX_LENGTH": "Subject must be at most {{max}} characters long"
+        },
+        "MESSAGE": {
+          "FIELD": "Message",
+          "PLACEHOLDER": "Your message",
+          "ERROR": "Message is required",
+          "ERROR_MIN_LENGTH": "Message must be at least {{min}} characters long"
+        },
+        "SUBMIT": {
+          "FIELD": "Submit",
+          "PLACEHOLDER": "Submit"
+        },
+        "NOTIFICATIONS": {
+          "SUCCESS": "Message sent successfully!",
+          "ERROR": "Error while sending the message"
+        }
+      }
+    }
+  },
+  "COMPONENTS": {
+    "NAVBAR": {
+      "ABOUT": "About",
+      "PROJECTS": "Projects",
+      "CONTACT": "Contact"
+    }
+  },
+  "LABEL": {
+    "SEE_RESUME": "Open Résumé"
+  }
+}
