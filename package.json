@@ -9,7 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prettier": "prettier --write \"src/**/*.ts\" \"src/**/*.html\"",
-    "lint:scss": "stylelint \"src/**/*.scss\""
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "build:api": "tsc -p api/tsconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@emailjs/browser": "^3.11.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "@vercel/node": "^3.0.11",
     "emailjs-com": "^3.2.0",
     "rxjs": "~7.8.0",
     "three": "^0.158.0",

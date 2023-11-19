@@ -1,5 +1,5 @@
 <div #toastDiv
-     [ngClass]="{'success': toast?.type === 'success', 'error': toast?.type === 'error', 'info': toast?.type === 'info', 'warning': toast?.type === 'warning'}"
+     [ngClass]="{'success': toast.type === 'success', 'error': toast.type === 'error', 'info': toast.type === 'info', 'warning': toast.type === 'warning'}"
      class="toast">
-  {{ toast?.message }}
+  {{ toast.message }}
 </div>

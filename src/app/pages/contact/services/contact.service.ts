@@ -6,6 +6,6 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   sendEmail(emailData: any) {
-    return this.http.post('/api/sendEmail', emailData)
+    return this.http.post('/api/email-provider', emailData)
   }
 }
