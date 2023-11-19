@@ -67,6 +67,7 @@ export class ContactComponent {
       },
       complete: () => {
         this.isEmailjsResponding = false
+        this.contactForm.reset()
       },
     })
   }
