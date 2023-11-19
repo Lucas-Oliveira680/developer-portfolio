@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'
-
-import emailjs from 'emailjs-com'
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import { ThemeService } from 'src/app/shared/services/theme.service'
-import { environment } from 'environments/environment'
 import { ToastService } from 'src/app/shared/services/toast.service'
+import { ContactService } from 'src/app/pages/contact/services/contact.service'
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +13,7 @@ import { ToastService } from 'src/app/shared/services/toast.service'
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss', '../../../styles/_forms.scss'],
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   isEmailjsResponding = false
   formFieldsTranslations = {
     name: '',
@@ -35,15 +33,12 @@ export class ContactComponent implements OnInit {
     private _formBuilder: FormBuilder,
     private _themeService: ThemeService,
     private _translate: TranslateService,
-    private _toast: ToastService
+    private _toast: ToastService,
+    private _contactService: ContactService
   ) {}
 
   get currentTheme() {
     return this._themeService.currentTheme()
-  }
-
-  ngOnInit() {
-    emailjs.init(environment.EMAILJS_USER_ID)
   }
 
   onSubmit() {
@@ -59,23 +54,20 @@ export class ContactComponent implements OnInit {
       message: formValues.message,
     }
 
-    emailjs
-      .send(environment.EMAILJS_SERVICE_ID, environment.EMAILJS_TEMPLATE_ID, emailData)
-      .then(
-        result => {
-          this.contactForm.reset()
-          this._translate.get('PAGES.CONTACT.FORM.NOTIFICATIONS.SUCCESS').subscribe((res: string) => {
-            this._toast.show(res, 'success')
-          })
-        },
-        error => {
-          this._translate.get('PAGES.CONTACT.FORM.NOTIFICATIONS.ERROR').subscribe((res: string) => {
-            this._toast.show(res, 'error')
-          })
-        }
-      )
-      .finally(() => {
+    this._contactService.sendEmail(formValues).subscribe({
+      next: () => {
+        this._translate.get('PAGES.CONTACT.FORM.NOTIFICATIONS.SUCCESS').subscribe((res: string) => {
+          this._toast.show(res, 'success')
+        })
+      },
+      error: () => {
+        this._translate.get('PAGES.CONTACT.FORM.NOTIFICATIONS.ERROR').subscribe((res: string) => {
+          this._toast.show(res, 'error')
+        })
+      },
+      complete: () => {
         this.isEmailjsResponding = false
-      })
+      },
+    })
   }
 }
