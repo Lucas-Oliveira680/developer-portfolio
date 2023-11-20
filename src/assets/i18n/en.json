@@ -46,6 +46,29 @@
           "ERROR": "Error while sending the message"
         }
       }
+    },
+    "PROJECTS": {
+      "TALENT_ACADEMY": {
+        "ROLE": "Junior Front-end Engineer",
+        "DESCRIPTION": "I significantly contributed to the development, maintenance, and testing of features used by thousands of users, with a special emphasis on front-end development. While my primary role was focused on user interface and experience, I also engaged in database modeling, API creation and maintenance, and other backend-related tasks, ensuring a comprehensive understanding of the entire project development cycle",
+        "COMPANY": "Talent Academy",
+        "START": "Apr 2021",
+        "END": "Oct 2023"
+      },
+      "SECONCISP_1": {
+        "ROLE": "Network Analyst",
+        "DESCRIPTION": "In this position, my primary focus was on the implementation and advanced utilization of Zabbix for network monitoring, playing a crucial role in enhancing system reliability and reducing network downtime. This implementation involved customizing Zabbix templates and creating complex monitoring scenarios. Additionally, I managed server environments, implemented security solutions, and handled the maintenance of virtualization infrastructure. I was also responsible for administering directory services and file systems, significantly contributing to the optimization of network operations and the security of the IT infrastructure.",
+        "COMPANY": "Seconci-SP",
+        "START": "JUN 2018",
+        "END": "JAN 2020"
+      },
+      "SECONCISP_2": {
+        "ROLE": "Junior Full-stack Engineer",
+        "DESCRIPTION": "As a Junior Full Stack Developer at Seconci-SP, I played a pivotal role in developing, maintaining, and enhancing an in-house tool for managing contracts. My responsibilities involved crafting intuitive and responsive user interfaces on the front-end, significantly improving user interaction and experience. In parallel, my back-end efforts were focused on robust API development and efficient database management, ensuring the tool's overall functionality and reliability. This role provided a comprehensive experience in both front-end and back-end development, honing my skills in creating and optimizing web applications for complex business processes.",
+        "COMPANY": "Seconci-SP",
+        "START": "Jan 2020",
+        "END": "Apr 2021"
+      }
     }
   },
   "COMPONENTS": {

@@ -1,0 +1,66 @@
+.work-experience {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "duration info";
+  gap: 16px;
+  min-height: 300px;
+  padding: 12px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--swappable-light-dark);
+  }
+
+  .duration {
+    grid-area: duration;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  .info {
+    grid-area: info;
+
+    .role {
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--swappable-accent)
+      }
+    }
+
+    .description {
+      opacity: 0.7;
+
+    }
+
+    .technologies {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 8px;
+
+      .tech {
+        font-size: 13px;
+        padding: 10px;
+        font-weight: 900;
+        border-radius: 20px;
+
+      }
+
+    }
+  }
+}
+
+html[data-theme="light"] div .tech {
+  background-color: var(--accent-color-2);
+  color: var(--opposite-text-color);
+}
+
+html[data-theme="dark"] div .tech {
+  background-color: var(--accent-color-1-rgba);
+  color: var(--accent-color-1);
+}

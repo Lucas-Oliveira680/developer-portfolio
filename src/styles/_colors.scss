@@ -3,16 +3,22 @@ $light-primary-color: #6B65F2;
 $light-complementary-color: #A71DE0;
 $light-accent-color-1: #ea3259;
 $light-accent-color-2: #32ea94;
-$light-background-color: #F0F0F0;
+$light-accent-color-1-rgba: rgba(234, 50, 89, 0.2);
+$light-accent-color-2-rgba: rgba(50, 234, 148, 0.2);
+$light-background-color: #f4f2ee;
 $light-text-color: #1E1E1E;
+$black-rgba: rgba(0, 0, 0, 0.1);
 
 // Color Variables for Dark Theme
 $dark-primary-color: #6B65F2;
 $dark-complementary-color: #A71DE0;
 $dark-accent-color-1: #ea3259;
 $dark-accent-color-2: #32ea94;
+$dark-accent-color-1-rgba: rgba(234, 50, 89, 0.2);
+$dark-accent-color-2-rgba: rgba(50, 234, 148, 0.2);
 $dark-background-color: #1E1E1E;
 $dark-text-color: #F0F0F0;
+$white-rgba: rgba(255, 255, 255, 0.1);
 
 @mixin theme($theme) {
   @if $theme == "light" {
@@ -26,12 +32,18 @@ $dark-text-color: #F0F0F0;
     --gradient-1: linear-gradient(to right, #{$light-accent-color-1} 0%, #{$light-primary-color} 100%);
     --gradient-2: linear-gradient(to right, #{$light-primary-color} 0%, #{$light-accent-color-2} 100%);
     --swappable-accent: #{$dark-accent-color-2};
+    --swappable-primary: #{$light-primary-color};
     --opposite-primary-color: #{$dark-primary-color};
     --opposite-complementary-color: #{$dark-complementary-color};
     --opposite-accent-color-1: #{$dark-accent-color-1};
     --opposite-accent-color-2: #{$dark-accent-color-2};
     --opposite-background-color: #{$dark-background-color};
     --opposite-text-color: #{$dark-text-color};
+    --swappable-accent-rgba: #{$dark-accent-color-2-rgba};
+    --swappable-light-dark: #{$black-rgba};
+    --accent-color-1-rgba: #{$light-accent-color-1-rgba};
+    --accent-color-2-rgba: #{$light-accent-color-2-rgba};
+
 
   } @else if $theme == "dark" {
     // Tranquil Harmony Dark
@@ -50,8 +62,13 @@ $dark-text-color: #F0F0F0;
     --opposite-background-color: #{$light-background-color};
     --opposite-text-color: #{$light-text-color};
     --swappable-accent: #{$light-accent-color-1};
-
+    --swappable-primary: #{$light-accent-color-1};
+    --swappable-accent-rgba: #{$light-accent-color-1-rgba};
+    --swappable-light-dark: #{$white-rgba};
+    --accent-color-1-rgba: #{$dark-accent-color-1-rgba};
+    --accent-color-2-rgba: #{$dark-accent-color-2-rgba};
 
   }
+
 
 }

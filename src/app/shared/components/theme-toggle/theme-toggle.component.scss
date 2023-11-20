@@ -10,7 +10,7 @@
   cursor: pointer;
 
   .icon {
-    font-size:25px;
+    font-size: 25px;
     color: var(--background-color);
   }
 
@@ -22,7 +22,7 @@
     position: absolute;
     left: 3px;
     top: 4px;
-    background-color: var(--accent-color-2);
+    background-color: var(--background-color);
     transition: transform 0.3s ease;
 
     &.on {

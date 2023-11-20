@@ -46,6 +46,29 @@
           "ERROR": "Erro ao enviar mensagem"
         }
       }
+    },
+    "PROJECTS": {
+      "TALENT_ACADEMY": {
+        "ROLE": "Desenvolvedor Front-end Junior",
+        "DESCRIPTION": "Contribuí significativamente no desenvolvimento, manutenção e testes de funcionalidades usadas por milhares de usuários, com uma ênfase especial no desenvolvimento front-end. Embora meu papel principal estivesse voltado para a interface e experiência do usuário, também atuei na modelagem de bancos de dados, criação e manutenção de APIs, e outras tarefas relacionadas ao back-end, garantindo uma compreensão abrangente de todo o ciclo de desenvolvimento do projeto.",
+        "COMPANY": "Talent Academy",
+        "START": "Apr 2021",
+        "END": "Oct 2023"
+      },
+      "SECONCISP_1": {
+        "ROLE": "Analista de Redes",
+        "DESCRIPTION": "Neste cargo, foquei primordialmente na implementação e no uso avançado do Zabbix para monitoramento de rede, desempenhando um papel crucial no aumento da confiabilidade do sistema e na diminuição do tempo de inatividade da rede. Essa implementação envolveu a configuração personalizada de templates do Zabbix e a criação de cenários de monitoramento complexos. Além disso, gerenciei ambientes de servidores, implementei soluções de segurança e cuidei da manutenção da infraestrutura de virtualização. Também fui responsável por administrar serviços de diretório e sistemas de arquivos, contribuindo significativamente para a otimização das operações de rede e a segurança da infraestrutura de TI.",
+        "COMPANY": "Seconci-SP",
+        "START": "JUN 2018",
+        "END": "JAN 2020"
+      },
+      "SECONCISP_2": {
+        "ROLE": "Engenheiro Full-stack Júnior",
+        "DESCRIPTION": "Como desenvolvedor Full Stack Junior na Seconci-SP, desempenhei um papel crucial no desenvolvimento, manutenção e aprimoramento de uma ferramenta interna para gerenciamento de contratos. Minhas responsabilidades incluíam criar interfaces de usuário intuitivas e responsivas na parte de front-end, melhorando significativamente a interação e experiência do usuário. Paralelamente, meus esforços no back-end se concentraram no desenvolvimento robusto de APIs e no gerenciamento eficiente de banco de dados, garantindo a funcionalidade e confiabilidade geral da ferramenta. Este papel proporcionou uma experiência abrangente em desenvolvimento tanto de front-end quanto de back-end, aprimorando minhas habilidades na criação e otimização de aplicações web para processos de negócios complexos.",
+        "COMPANY": "Seconci-SP",
+        "START": "Jan 2020",
+        "END": "Abr 2021"
+      }
     }
   },
   "COMPONENTS": {

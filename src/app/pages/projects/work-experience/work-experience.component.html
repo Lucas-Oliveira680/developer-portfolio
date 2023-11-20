@@ -1,0 +1,14 @@
+<div class="work-experience">
+  <div class="duration">
+    {{workExperience.start | translate}} — {{workExperience.end | translate}}
+  </div>
+  <div class="info">
+        <span class="role text regular-color text-bold"><a [href]="workExperience.website"
+                                                           target="_blank">{{workExperience.role | translate}}
+          · {{workExperience.company | translate}}{{' '}}</a><i class="fa-solid fa-link"></i></span>
+    <p class="description text regular-color">{{workExperience.description | translate}}</p>
+    <div class="technologies">
+      <span *ngFor="let tech of workExperience.tech" class="tech">{{tech}}</span>
+    </div>
+  </div>
+</div>

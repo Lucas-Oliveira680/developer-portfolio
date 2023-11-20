@@ -1,0 +1,28 @@
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "projects work-experiences";
+
+  .projects {
+    grid-area: projects;
+  }
+
+  .work-experiences {
+    grid-area: work-experiences;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 16px;
+    max-height: 700px;
+    overflow-y: scroll;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+
+  }
+}
