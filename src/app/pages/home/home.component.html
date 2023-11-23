@@ -1,17 +1,18 @@
 <main>
   <section id="about">
 
-    <h1 [ngClass]="{'title': !isMobile, 'subtitle': isMobile}" [textContent]="'PAGES.ABOUT.ABOUT_ME' | translate" appTypewriter [typingSpeed]="50"></h1>
+    <h1 [ngClass]="{'title': !isMobile, 'subtitle': isMobile}" [textContent]="'PAGES.ABOUT.ABOUT_ME' | translate"
+        [typingSpeed]="35" appTypewriter></h1>
 
   </section>
 
 
   <div class="download-cv">
-    <button class="gradient-button" (click)="openResume()">{{ 'LABEL.SEE_RESUME' | translate}}</button>
+    <button (click)="openResume()" class="gradient-button">{{ 'LABEL.SEE_RESUME' | translate}}</button>
   </div>
 
-  <section id="earth" *ngIf="!isMobile">
-<!--    <app-earth></app-earth>-->
+  <section *ngIf="!isMobile" id="earth">
+    <!--    <app-earth></app-earth>-->
   </section>
 
 

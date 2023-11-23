@@ -1,16 +1,18 @@
-
 <div class="wrapper">
 
-<header class="header">
-  <img class="logo" src="./assets/logo/svg/exp-05.svg" alt="Lucas logo">
-  <nav class="navbar">
-  <small class="text hover-underline-animation" routerLink="home" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.ABOUT' | translate }}</small>
-   <small class="text hover-underline-animation" routerLink="projects" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.PROJECTS' | translate }}</small>
-   <small class="text hover-underline-animation" routerLink="contact" routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.CONTACT' | translate }}</small>
-  </nav>
-  <div class="settings">
-  <app-language-toggle></app-language-toggle>
-  <app-theme-toggle></app-theme-toggle>
-  </div>
-</header>
+  <header class="header">
+    <img alt="Lucas logo" class="logo" src="./assets/logo/svg/exp-06.svg">
+    <nav class="navbar">
+      <small class="text hover-underline-animation" routerLink="home"
+             routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.ABOUT' | translate }}</small>
+      <small class="text hover-underline-animation" routerLink="projects"
+             routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.PROJECTS' | translate }}</small>
+      <small class="text hover-underline-animation" routerLink="contact"
+             routerLinkActive="text-bold">{{'COMPONENTS.NAVBAR.CONTACT' | translate }}</small>
+    </nav>
+    <div class="settings">
+      <app-language-toggle></app-language-toggle>
+      <app-theme-toggle></app-theme-toggle>
+    </div>
+  </header>
 </div>

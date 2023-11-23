@@ -1,3 +1,5 @@
+@import "src/styles/mixins";
+
 .work-experience {
   display: grid;
   grid-template-columns: 25% 75%;
@@ -8,6 +10,22 @@
   padding: 12px;
   transition: background-color 0.3s ease-in-out;
   border-radius: 5px;
+
+
+  @include respond-to('md') {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.8fr;
+    grid-template-areas:
+      "duration"
+      "info";
+
+    .duration {
+      padding: 12px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
 
   &:hover {
     cursor: pointer;
@@ -54,14 +72,4 @@
 
     }
   }
-}
-
-html[data-theme="light"] div .tech {
-  background-color: var(--accent-color-2);
-  color: var(--opposite-text-color);
-}
-
-html[data-theme="dark"] div .tech {
-  background-color: var(--accent-color-1-rgba);
-  color: var(--accent-color-1);
 }

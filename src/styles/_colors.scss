@@ -3,6 +3,7 @@ $light-primary-color: #6B65F2;
 $light-complementary-color: #A71DE0;
 $light-accent-color-1: #ea3259;
 $light-accent-color-2: #32ea94;
+$light-warning-color: #f2d06b;
 $light-accent-color-1-rgba: rgba(234, 50, 89, 0.2);
 $light-accent-color-2-rgba: rgba(50, 234, 148, 0.2);
 $light-background-color: #f4f2ee;
@@ -14,6 +15,8 @@ $dark-primary-color: #6B65F2;
 $dark-complementary-color: #A71DE0;
 $dark-accent-color-1: #ea3259;
 $dark-accent-color-2: #32ea94;
+$dark-warning-color: #f2d06b;
+
 $dark-accent-color-1-rgba: rgba(234, 50, 89, 0.2);
 $dark-accent-color-2-rgba: rgba(50, 234, 148, 0.2);
 $dark-background-color: #1E1E1E;
@@ -32,6 +35,7 @@ $white-rgba: rgba(255, 255, 255, 0.1);
     --gradient-1: linear-gradient(to right, #{$light-accent-color-1} 0%, #{$light-primary-color} 100%);
     --gradient-2: linear-gradient(to right, #{$light-primary-color} 0%, #{$light-accent-color-2} 100%);
     --swappable-accent: #{$dark-accent-color-2};
+    --swappable-accent-reverse: #{$dark-accent-color-1};
     --swappable-primary: #{$light-primary-color};
     --opposite-primary-color: #{$dark-primary-color};
     --opposite-complementary-color: #{$dark-complementary-color};
@@ -43,6 +47,7 @@ $white-rgba: rgba(255, 255, 255, 0.1);
     --swappable-light-dark: #{$black-rgba};
     --accent-color-1-rgba: #{$light-accent-color-1-rgba};
     --accent-color-2-rgba: #{$light-accent-color-2-rgba};
+    --warning-color: #{$light-warning-color};
 
 
   } @else if $theme == "dark" {
@@ -62,11 +67,14 @@ $white-rgba: rgba(255, 255, 255, 0.1);
     --opposite-background-color: #{$light-background-color};
     --opposite-text-color: #{$light-text-color};
     --swappable-accent: #{$light-accent-color-1};
+    --swappable-accent-reverse: #{$light-accent-color-2};
+
     --swappable-primary: #{$light-accent-color-1};
     --swappable-accent-rgba: #{$light-accent-color-1-rgba};
     --swappable-light-dark: #{$white-rgba};
     --accent-color-1-rgba: #{$dark-accent-color-1-rgba};
     --accent-color-2-rgba: #{$dark-accent-color-2-rgba};
+    --warning-color: #{$dark-warning-color};
 
   }
 

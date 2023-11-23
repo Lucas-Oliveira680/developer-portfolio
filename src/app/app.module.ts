@@ -14,7 +14,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { MobileNavbarComponent } from 'src/app/shared/components/mobile-navbar/mobile-navbar.component'
 import { LanguageToggleComponent } from 'src/app/shared/components/language-toggle/language-toggle.component'
-import { WorkExperienceComponent } from 'src/app/pages/projects/work-experience/work-experience.component'
+import { WorkExperienceComponent } from 'src/app/pages/projects/components/work-experience/work-experience.component'
+import { PortfolioProjectComponent } from 'src/app/pages/projects/components/portfolio-project/portfolio-project.component'
+import { PaginatorComponent } from 'src/app/shared/components/paginator/paginator.component'
+import { CeilPipe } from 'src/app/shared/pipes/ceil.pipe'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/')
@@ -41,6 +44,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     MobileNavbarComponent,
     LanguageToggleComponent,
     WorkExperienceComponent,
+    PortfolioProjectComponent,
+    PaginatorComponent,
+    CeilPipe,
   ],
   providers: [],
   bootstrap: [AppComponent],

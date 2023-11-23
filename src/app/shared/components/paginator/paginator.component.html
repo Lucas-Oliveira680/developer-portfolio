@@ -1,0 +1,8 @@
+<div class="paginator">
+
+  <div class="pages">
+    <div (click)="onPageClick(page)" *ngFor="let page of pageNumbers" [class.active]="isActive(page)" class="page">
+      <i class="fa-solid fa-circle"></i>
+    </div>
+  </div>
+</div>

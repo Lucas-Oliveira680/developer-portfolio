@@ -8,7 +8,7 @@
           · {{workExperience.company | translate}}{{' '}}</a><i class="fa-solid fa-link"></i></span>
     <p class="description text regular-color">{{workExperience.description | translate}}</p>
     <div class="technologies">
-      <span *ngFor="let tech of workExperience.tech" class="tech">{{tech}}</span>
+      <div *ngFor="let tech of workExperience.tech" class="tech">{{tech}}</div>
     </div>
   </div>
 </div>

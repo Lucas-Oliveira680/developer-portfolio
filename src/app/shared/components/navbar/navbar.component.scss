@@ -3,10 +3,10 @@
   margin-left: 80px;
   margin-right: 80px;
 }
+
 .header {
   width: 100%;
   display: grid;
-  margin-top: 25px;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
@@ -22,21 +22,23 @@
     align-items: center;
     gap: 32px;
   }
+
   .navbar {
-      grid-area: navbar;
-      height: 45px;
-      width: 100%;
-      padding: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      cursor: pointer;
+    grid-area: navbar;
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    cursor: pointer;
   }
+
   .logo {
     grid-area: logo;
-    width: 160px;
-    height: 36px;
+    width: 50px;
+    height: 100px;
   }
 
 }

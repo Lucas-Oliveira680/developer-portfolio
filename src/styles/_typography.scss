@@ -69,12 +69,24 @@
   color: var(--opposite-text-color);
 }
 
+.swappable-accent-color {
+  color: var(--swappable-accent);
+}
+
+.swappable-accent-reverse-color {
+  color: var(--swappable-accent-reverse);
+}
+
 .accent-color-1 {
   color: var(--accent-color-1);
 }
 
 .accent-color-2 {
   color: var(--accent-color-2);
+}
+
+.warning-color {
+  color: var(--warning-color);
 }
 
 .text-bold {

@@ -2,10 +2,14 @@
   <div class="projects">
     <h1 class="title regular-color text-bold text-center">{{'PAGES.PROJECTS.GALLERY.TITLE' | translate}}</h1>
     <div class="gallery">
-
+      <app-portfolio-project *ngFor="let project of displayedProjects"
+                             [portfolioProject]="project"></app-portfolio-project>
     </div>
+    <app-paginator (pageChanged)="onPageChange($event)"
+                   [pages]="allProjects.length / itemsPerPage | ceil"></app-paginator>
   </div>
   <div class="work-experiences">
+    <h1 class="title regular-color text-bold text-center">{{'PAGES.PROJECTS.WORK_EXPERIENCE' | translate}}</h1>
     <app-work-experience *ngFor="let experience of experiences" [workExperience]="experience"></app-work-experience>
   </div>
 </div>

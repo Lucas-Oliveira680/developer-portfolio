@@ -1,0 +1,33 @@
+.paginator {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  overflow-y: hidden;
+
+  .pages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .page {
+      cursor: pointer;
+
+      i {
+        font-size: 10px;
+        color: var(--text-color);
+      }
+
+      &.active {
+        i {
+          color: var(--swappable-accent);
+        }
+      }
+    }
+  }
+
+}

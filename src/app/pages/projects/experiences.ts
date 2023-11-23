@@ -24,7 +24,7 @@ export const experiences: IWorkExperience[] = [
     start: 'PAGES.PROJECTS.SECONCISP_1.START',
     end: 'PAGES.PROJECTS.SECONCISP_1.END',
     role: 'PAGES.PROJECTS.SECONCISP_1.ROLE',
-    tech: ['Zabbix', 'Windows Server', 'Symantec', 'VMware', 'Active Directory', 'DFS', 'Voip'],
+    tech: ['Zabbix', 'Linux', 'Powershell', 'Windows Server', 'Symantec', 'VMware', 'Active Directory', 'DFS', 'Voip'],
     description: 'PAGES.PROJECTS.SECONCISP_1.DESCRIPTION',
     website: 'https://www.seconci-sp.org.br/',
   },

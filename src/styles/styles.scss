@@ -7,7 +7,7 @@
 * {
   box-sizing: border-box;
   //debug
-  //  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 
 
@@ -79,7 +79,7 @@ app-root {
 //SCROLLBAR CUSTOMIZATION
 /* Custom Scrollbar for Light Theme */
 [data-theme="light"] ::-webkit-scrollbar {
-  width: 6px; /* Reduced from 8px to 6px */
+  width: 6px;
 }
 
 [data-theme="light"] ::-webkit-scrollbar-track {
@@ -87,13 +87,13 @@ app-root {
 }
 
 [data-theme="light"] ::-webkit-scrollbar-thumb {
-  background: var(--accent-color-2); /* Swapped from color-1 to color-2 */
+  background: var(--accent-color-2);
   border-radius: 4px;
 }
 
 /* Custom Scrollbar for Dark Theme */
 [data-theme="dark"] ::-webkit-scrollbar {
-  width: 6px; /* Reduced from 8px to 6px */
+  width: 6px;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-track {
@@ -101,17 +101,28 @@ app-root {
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb {
-  background: var(--accent-color-1); /* Swapped from color-2 to color-1 */
+  background: var(--accent-color-1);
   border-radius: 4px;
 }
 
 /* For other browsers like Firefox */
 [data-theme="light"] {
-  scrollbar-color: var(--accent-color-2) var(--background-color); /* Swapped from color-1 to color-2 */
+  scrollbar-color: var(--accent-color-2) var(--background-color);
   scrollbar-width: thin;
 }
 
 [data-theme="dark"] {
-  scrollbar-color: var(--accent-color-1) var(--background-color); /* Swapped from color-2 to color-1 */
+  scrollbar-color: var(--accent-color-1) var(--background-color);
   scrollbar-width: thin;
+}
+
+
+html[data-theme="light"] div .tech {
+  background-color: var(--accent-color-2);
+  color: var(--opposite-text-color);
+}
+
+html[data-theme="dark"] div .tech {
+  background-color: var(--accent-color-1-rgba);
+  color: var(--accent-color-1);
 }

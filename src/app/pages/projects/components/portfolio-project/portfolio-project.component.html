@@ -1,0 +1,39 @@
+<div class="portfolio-project">
+  <div class="header">
+    <i (click)="toggleView()" class="fa-solid fa-circle-info"></i>
+  </div>
+
+
+  <h1 class="title opposite-text-color text-bold">{{portfolioProject.name  | translate}}</h1>
+  <ng-container *ngIf="!viewInfo">
+    <div class="project">
+      <img [alt]="portfolioProject.name" [src]="portfolioProject.image">
+
+      <div class="buttons">
+        <a *ngIf="portfolioProject.url" [href]="portfolioProject.url" class="link" target="_blank">
+          <span class="text primary-color text-bold">{{'PAGES.PROJECTS.GALLERY.WEBSITE' | translate}}</span>
+          <i class="fa-solid fa-link"></i>
+        </a>
+        <div *ngIf="portfolioProject.workInProgress === true && !portfolioProject.url" class="spacer"></div>
+
+        <div *ngIf="portfolioProject.workInProgress === true" class="text-small text-bold warning-color">W.I.P
+          <i class="fa-solid fa-person-digging"></i>
+        </div>
+        <a *ngIf="portfolioProject.sourceCode" [href]="portfolioProject.sourceCode" class="source-code" target="_blank">
+          <span class="text primary-color text-bold">{{'PAGES.PROJECTS.GALLERY.SOURCE_CODE' | translate}}</span>
+          <i class="fa-solid fa-code"></i>
+        </a>
+        <div *ngIf="portfolioProject.workInProgress === true && !portfolioProject.sourceCode" class="spacer"></div>
+
+      </div>
+    </div>
+
+  </ng-container>
+
+  <ng-container *ngIf="viewInfo">
+    <div class="description">
+      <p [innerHTML]="portfolioProject.description | translate" class="text opposite-text-color"></p>
+    </div>
+  </ng-container>
+
+</div>
