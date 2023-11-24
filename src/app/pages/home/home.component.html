@@ -11,7 +11,9 @@
     <button (click)="openResume()" class="gradient-button">{{ 'LABEL.SEE_RESUME' | translate}}</button>
   </div>
 
-  <section *ngIf="!isMobile" id="earth">
+  <section *ngIf="!isMobile" [ngClass]="{ 'blob-1': currentTheme === 'light', 'blob-2': currentTheme === 'dark'}"
+           class="pixel-art">
+    <img src="assets/gifs/spr_lucas.gif">
   </section>
 
 

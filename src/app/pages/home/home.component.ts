@@ -1,35 +1,39 @@
-import {Component, HostListener} from '@angular/core';
-import {LanguageService} from "src/app/shared/services/language.service";
-import {EBreakpoints} from "src/app/shared/types/breakpoints.enum";
+import { Component, HostListener } from '@angular/core'
+import { LanguageService } from 'src/app/shared/services/language.service'
+import { EBreakpoints } from 'src/app/shared/types/breakpoints.enum'
+import { ThemeService } from 'src/app/shared/services/theme.service'
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', '../../../styles/_buttons.scss']
+  styleUrls: ['./home.component.scss', '../../../styles/_buttons.scss'],
 })
 export class HomeComponent {
-  isMobile = window.innerWidth <= EBreakpoints.MD;
+  isMobile = window.innerWidth <= EBreakpoints.MD
 
-  constructor(private languageService: LanguageService) {
+  constructor(
+    private languageService: LanguageService,
+    private _themeService: ThemeService
+  ) {}
+
+  get currentTheme() {
+    return this._themeService.currentTheme()
   }
 
   openResume() {
-    const currentLang = this.languageService.getLanguage();
-    if(!currentLang) return;
+    const currentLang = this.languageService.getLanguage()
+    if (!currentLang) return
 
-    if(currentLang === 'en') {
-      window.open('/assets/resume/lucas_oliveira_resume.pdf', '_blank');
+    if (currentLang === 'en') {
+      window.open('/assets/resume/lucas_oliveira_resume.pdf', '_blank')
     }
-    if(currentLang === 'pt-br') {
-      window.open('/assets/resume/lucas_oliveira_curriculo.pdf', '_blank');
+    if (currentLang === 'pt-br') {
+      window.open('/assets/resume/lucas_oliveira_curriculo.pdf', '_blank')
     }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.isMobile = window.innerWidth <= EBreakpoints.MD;
+    this.isMobile = window.innerWidth <= EBreakpoints.MD
   }
-
-
-
 }
