@@ -31,9 +31,11 @@
   margin-left: 20px;
   margin-right: 20px;
 
-  img {
-    width: 50px;
-    height: 100px;
+  .logo {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 45%;
+    min-width: 254.39px;
   }
 
   .settings {

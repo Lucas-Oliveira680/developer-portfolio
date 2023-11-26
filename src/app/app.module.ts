@@ -18,6 +18,7 @@ import { WorkExperienceComponent } from 'src/app/pages/projects/components/work-
 import { PortfolioProjectComponent } from 'src/app/pages/projects/components/portfolio-project/portfolio-project.component'
 import { PaginatorComponent } from 'src/app/shared/components/paginator/paginator.component'
 import { CeilPipe } from 'src/app/shared/pipes/ceil.pipe'
+import { AnimatedLogoComponent } from 'src/app/shared/components/animated-logo/animated-logo.component'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/')
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioProjectComponent,
     PaginatorComponent,
     CeilPipe,
+    AnimatedLogoComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

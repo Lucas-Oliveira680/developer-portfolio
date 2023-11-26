@@ -37,9 +37,10 @@
 
   .logo {
     grid-area: logo;
-    width: 50px;
-    height: 100px;
     cursor: pointer;
+    margin-top: 10px;
+    width: 45%;
+    min-width: 254.39px;
   }
 
 }
