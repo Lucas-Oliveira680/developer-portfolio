@@ -63,6 +63,10 @@
         "TRANQUIL_HARMONY": {
           "NAME": "Tranquil Harmony Theme",
           "DESCRIPTION": "A dark theme for VSCode and other editors in the future."
+        },
+        "DECK_BUILDER": {
+          "NAME": "Pokemon TCG Deck Builder",
+          "DESCRIPTION": "A test made for the company Agência Estado, consisting of a deck builder for the Pokémon TCG. Developed using Angular 17, Sass, TailwindCSS, NG-Zorro, and Pokémon TCG API."
         }
       },
       "WORK_EXPERIENCE": "My work experiences:",

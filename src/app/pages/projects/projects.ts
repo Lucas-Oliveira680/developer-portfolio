@@ -10,6 +10,15 @@ export const projects: IPortfolioProject[] = [
     workInProgress: false,
   },
   {
+    name: 'PAGES.PROJECTS.GALLERY.DECK_BUILDER.NAME',
+    image: 'assets/projects-ss/pokemon tcg deck builder.png',
+    description: 'PAGES.PROJECTS.GALLERY.DECK_BUILDER.DESCRIPTION',
+    url: 'https://teste-agencia-estado-lucas-oliveiras-projects-8bd544c3.vercel.app/',
+    sourceCode: 'https://github.com/Lucas-Oliveira680/teste-agencia-estado',
+    workInProgress: false,
+  },
+
+  {
     name: 'PAGES.PROJECTS.GALLERY.CSS_TOOLKIT.NAME',
     image: 'assets/projects-ss/CSS Toolkit Preview.png',
     description: 'PAGES.PROJECTS.GALLERY.CSS_TOOLKIT.DESCRIPTION',
