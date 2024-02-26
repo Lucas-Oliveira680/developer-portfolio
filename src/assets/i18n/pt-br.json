@@ -1,7 +1,7 @@
 {
   "PAGES": {
     "ABOUT": {
-      "ABOUT_ME": "Sou um desenvolvedor front-end com quase <span class=\"accent-color-1\">4 anos de experiência</span> transformando designs em interfaces incríveis usando tecnologias como <span class=\"accent-color-1\">Angular</span>, <span class=\"accent-color-1\">CSS3</span>, <span class=\"accent-color-1\">SASS</span>, <span class=\"accent-color-1\">Bootstrap</span>, <span class=\"accent-color-1\">Tailwind</span> e o que há de mais moderno em web development. Apaixonado por criar belas <span class=\"accent-color-1\">UI’s</span> que tornam a experiência do usuário única.",
+      "ABOUT_ME": "Sou um Desenvolvedor Full Stack com <span class=\"accent-color-1\">4 anos de experiência</span> criando aplicações web incríveis usando <span class=\"accent-color-1\">Angular</span> e <span class=\"accent-color-1\">Node</span>. Apaixonado por criar belas <span class=\"accent-color-1\">interfaces</span> no frontend e código <span class=\"accent-color-1\">performático</span> e de alta qualidade no backend.",
       "SKILLS": "Habilidades"
     },
     "CONTACT": {
@@ -71,7 +71,7 @@
       },
       "WORK_EXPERIENCE": "Minhas experiências profissionais:",
       "TALENT_ACADEMY": {
-        "ROLE": "Desenvolvedor Front-end",
+        "ROLE": "Desenvolvedor Full Stack",
         "DESCRIPTION": "Contribuí significativamente no desenvolvimento, manutenção e testes de funcionalidades usadas por milhares de usuários, com uma ênfase especial no desenvolvimento front-end. Embora meu papel principal estivesse voltado para a interface e experiência do usuário, também atuei na modelagem de bancos de dados, criação e manutenção de APIs, e outras tarefas relacionadas ao back-end, garantindo uma compreensão abrangente de todo o ciclo de desenvolvimento do projeto.",
         "COMPANY": "Talent Academy",
         "START": "Abr 2021",
@@ -85,7 +85,7 @@
         "END": "JAN 2020"
       },
       "SECONCISP_2": {
-        "ROLE": "Desenvolvedor Full-stack",
+        "ROLE": "Desenvolvedor Full stack",
         "DESCRIPTION": "Como desenvolvedor Full Stack  na Seconci-SP, desempenhei um papel crucial no desenvolvimento, manutenção e aprimoramento de uma ferramenta interna para gerenciamento de contratos. Minhas responsabilidades incluíam criar interfaces de usuário intuitivas e responsivas na parte de front-end, melhorando significativamente a interação e experiência do usuário. Paralelamente, meus esforços no back-end se concentraram no desenvolvimento robusto de APIs e no gerenciamento eficiente de banco de dados, garantindo a funcionalidade e confiabilidade geral da ferramenta. Este papel proporcionou uma experiência abrangente em desenvolvimento tanto de front-end quanto de back-end, aprimorando minhas habilidades na criação e otimização de aplicações web para processos de negócios complexos.",
         "COMPANY": "Seconci-SP",
         "START": "Jan 2020",

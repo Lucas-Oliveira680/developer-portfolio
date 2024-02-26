@@ -1,7 +1,7 @@
 {
   "PAGES": {
     "ABOUT": {
-      "ABOUT_ME": "I am a front-end developer with almost <span class=\"accent-color-1\">4 years of experience</span>  transforming designs into amazing interfaces using technologies like <span class=\"accent-color-1\">Angular</span>, <span class=\"accent-color-1\">CSS3</span>, <span class=\"accent-color-1\">SASS</span>, <span class=\"accent-color-1\">Bootstrap</span>, <span class=\"accent-color-1\">Tailwind</span>, and the latest in web development. Passionate about creating beautiful <span class=\"accent-color-1\">UI</span> that makes the user experience unique.",
+      "ABOUT_ME": "I am a Full Stack developer with <span class=\"accent-color-1\">4 years of experience</span> creating amazing web applications using <span class=\"accent-color-1\">Angular</span> and <span class=\"accent-color-1\">Node</span>. Passionate about creating beautiful <span class=\"accent-color-1\">UI</span> on the frontend and <span class=\"accent-color-1\">performant</span> and high-quality code on the backend.",
       "SKILLS": "Skills"
     },
     "CONTACT": {
@@ -71,7 +71,7 @@
       },
       "WORK_EXPERIENCE": "My work experiences:",
       "TALENT_ACADEMY": {
-        "ROLE": " Front-end Developer",
+        "ROLE": "Full Stack Developer",
         "DESCRIPTION": "I significantly contributed to the development, maintenance, and testing of features used by thousands of users, with a special emphasis on front-end development. While my primary role was focused on user interface and experience, I also engaged in database modeling, API creation and maintenance, and other backend-related tasks, ensuring a comprehensive understanding of the entire project development cycle",
         "COMPANY": "Talent Academy",
         "START": "Apr 2021",
@@ -85,7 +85,7 @@
         "END": "JAN 2020"
       },
       "SECONCISP_2": {
-        "ROLE": " Full-stack Developer",
+        "ROLE": " Full stack Developer",
         "DESCRIPTION": "As a  Full Stack Developer at Seconci-SP, I played a pivotal role in developing, maintaining, and enhancing an in-house tool for managing contracts. My responsibilities involved crafting intuitive and responsive user interfaces on the front-end, significantly improving user interaction and experience. In parallel, my back-end efforts were focused on robust API development and efficient database management, ensuring the tool's overall functionality and reliability. This role provided a comprehensive experience in both front-end and back-end development, honing my skills in creating and optimizing web applications for complex business processes.",
         "COMPANY": "Seconci-SP",
         "START": "Jan 2020",

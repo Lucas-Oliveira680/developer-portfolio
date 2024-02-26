@@ -2,7 +2,7 @@
 @import 'colors';
 @import 'typography';
 @import "reset";
-@import 'mixins';
+@import '../../../CssToolbox/src/styles/mixins';
 
 * {
   box-sizing: border-box;
