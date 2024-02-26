@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'mixins';
 @import 'colors';
 @import 'typography';
 @import "reset";
-@import '../../../CssToolbox/src/styles/mixins';
 
 * {
   box-sizing: border-box;
