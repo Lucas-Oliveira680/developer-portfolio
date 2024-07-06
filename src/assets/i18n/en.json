@@ -90,6 +90,13 @@
         "COMPANY": "Seconci-SP",
         "START": "Jan 2020",
         "END": "Apr 2021"
+      },
+      "AGILE_THOUGHT": {
+        "COMPANY": "Agile Thought",
+        "ROLE": "Front end Developer",
+        "START": "Mar 2024",
+        "END": "Present",
+        "DESCRIPTION": "I work as an Angular Front-End Consultant at Santander, contributing to a key project focused on schedule management for bank managers. I develop the user interface using Angular and a microfrontend architecture, ensuring a seamless and efficient user experience."
       }
     }
   },

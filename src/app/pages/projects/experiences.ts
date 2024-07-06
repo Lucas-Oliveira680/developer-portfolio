@@ -2,6 +2,15 @@ import { IWorkExperience } from 'src/app/pages/projects/interfaces/work-experien
 
 export const experiences: IWorkExperience[] = [
   {
+    company: 'PAGES.PROJECTS.AGILE_THOUGHT.COMPANY',
+    start: 'PAGES.PROJECTS.AGILE_THOUGHT.START',
+    end: 'PAGES.PROJECTS.AGILE_THOUGHT.END',
+    role: 'PAGES.PROJECTS.AGILE_THOUGHT.ROLE',
+    tech: ['Angular', 'MFE', 'TypeScript', 'Sass', 'Figma', 'Karma', 'Jasmine'],
+    description: 'PAGES.PROJECTS.AGILE_THOUGHT.DESCRIPTION',
+    website: 'https://agilethought.com/',
+  },
+  {
     company: 'PAGES.PROJECTS.TALENT_ACADEMY.COMPANY',
     start: 'PAGES.PROJECTS.TALENT_ACADEMY.START',
     end: 'PAGES.PROJECTS.TALENT_ACADEMY.END',
